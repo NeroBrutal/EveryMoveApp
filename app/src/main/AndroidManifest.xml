@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EveryMoveApp"
+        tools:targetApi="31" >
+        <activity
+            android:name=".strength_plan_activity"
+            android:exported="false" />
+        <activity
+            android:name=".AmharMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".core_workout_plan_activity"
+            android:exported="false" />
+        <activity
+            android:name=".balanced_plan_activity"
+            android:exported="false" />
+        <activity
+            android:name=".aerobics_plan_activity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeProflePassword"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteProfile"
+            android:exported="false" />
+        <activity
+            android:name=".WorkoutsList"
+            android:exported="false" />
+        <activity
+            android:name=".RaeedMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlanD"
+            android:exported="false" />
+        <activity
+            android:name=".PlanC"
+            android:exported="false" />
+        <activity
+            android:name=".PlanB"
+            android:exported="false" />
+        <activity
+            android:name=".PlanA"
+            android:exported="false" />
+        <activity
+            android:name=".editWorkouts"
+            android:exported="false" />
+        <activity
+            android:name=".viewPlans"
+            android:exported="false" />
+        <activity
+            android:name=".DietPlanB"
+            android:exported="false" />
+        <activity
+            android:name=".dietPlanA"
+            android:exported="false" />
+        <activity
+            android:name=".DietList"
+            android:exported="false" />
+        <activity
+            android:name=".createDietPlan"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewProgress"
+            android:exported="false" />
+        <activity
+            android:name=".SharePost"
+            android:exported="false" />
+        <activity
+            android:name=".SavedPosts"
+            android:exported="false" />
+        <activity
+            android:name=".ProgressOrSaved"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_Edit_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SetUpProfilepicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Manage_Profile_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

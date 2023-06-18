@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProgress"
+    android:background="@drawable/intro">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:elevation="1dp"
+                app:cardCornerRadius="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+
+                    android:background="@drawable/intro">
+                    <!--</LinearLayout>-->
+                    <TextView
+                        android:id="@+id/txtWeek"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This Week's Progress"
+                        android:textAlignment="center"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="#009B85"
+                        android:fontFamily="@font/lobster"/>
+
+                    <TextView
+                        android:id="@+id/txtCaption"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_margin="1dp"
+                        android:text=""
+                        android:textSize="1dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewGraph"
+                android:layout_width="match_parent"
+                android:layout_height="850dp"
+                android:layout_margin="20dp"
+                android:elevation="10dp"
+                android:layout_below="@+id/Title"
+                app:cardCornerRadius="40dp"
+                android:background="#353536">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:background="@drawable/intro">
+                    <!--</LinearLayout>-->
+
+                    <org.eazegraph.lib.charts.PieChart
+                        android:id="@+id/piechart"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="189dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical">
+
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/VeryGood" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="Very Good"
+                                android:textColor="#009B85"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp">
+
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/Good222" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="10dp"
+                                android:text="Good"
+                                android:textColor="#009B85"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp">
+
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/Normal" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="Normal"
+                                android:textColor="#009B85"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp">
+
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/Bad" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="Bad"
+                                android:textColor="#009B85"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp">
+
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/VeryBad" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="Very Bad"
+                                android:textColor="#009B85"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Progress in Percentage"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            android:textColor="#009B85"
+                            android:fontFamily="@font/lobster"/>
+
+                        <!--View to display the line-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/color_two" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Very Good"
+                                android:textSize="18sp"
+                                android:textColor="#009B85"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvVeryGood"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="sans-serif-light"
+                                android:text="25%"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/VeryGood"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                        <!--View to display the line-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/color_two" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Good"
+                                android:textSize="18sp"
+                                android:textColor="#009B85"
+                                android:textStyle="bold"/>
+
+                            <!--Text view to display the percentage -->
+
+                            <TextView
+                                android:id="@+id/tvGood"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="sans-serif-light"
+                                android:text="10%"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/Good222"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/color_two" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Normal"
+                                android:textSize="18sp"
+                                android:textColor="#009B85"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvNormal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="sans-serif-light"
+                                android:text="15%"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/Normal"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/color_two" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Bad"
+                                android:textSize="18sp"
+                                android:textColor="#009B85"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvBad"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="sans-serif-light"
+                                android:text="15%"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/Bad"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <!--View to display the line-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/color_two" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Very Bad"
+                                android:textSize="18sp"
+                                android:textColor="#009B85"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvVeryBad"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="sans-serif-light"
+                                android:text="15%"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/VeryBad"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <!--View to display the line-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/color_two" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/details3"
+                android:layout_width="wrap_content"
+                android:layout_height="600dp"
+                android:layout_below="@+id/cardViewGraph"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="800dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/intro">
+
+                    <org.eazegraph.lib.charts.ValueLineChart
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/linechart"
+                        android:layout_width="match_parent"
+                        android:layout_height="580dp"
+                        android:layout_margin="20dp"
+                        android:padding="1dp"
+                        app:egLegendHeight="40dp"
+                        app:egLineStroke="5dp"
+                        app:egUseOverlapFill="false"
+                        app:egLegendTextSize="6dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/details2"
+                android:layout_width="wrap_content"
+                android:layout_height="780dp"
+                android:layout_below="@+id/details3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="880dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/intro">
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="20dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Date"
+                        android:textAlignment="center"
+                        android:textColor="#009B85"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <org.eazegraph.lib.charts.BarChart xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/barchart"
+                        android:layout_width="match_parent"
+                        android:layout_height="480dp"
+                        android:layout_margin="10dp"
+                        android:padding="1dp"
+                        app:egBarWidth="25dp"
+                        app:egLegendHeight="20dp"
+                        app:egLegendTextSize="6dp"
+
+                        />
+
+                    <Button
+                        android:id="@+id/btn_share_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:text="Save"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/roboto"
+
+                        android:backgroundTint="#009B85"
+                        app:cornerRadius="40dp"
+                        />
+
+
+                    <LinearLayout
+                        android:id="@+id/linl2"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/details2"
+                        android:layout_margin="10dp">
+
+                        <Button
+                            android:id="@+id/btn_Prev"
+                            android:layout_width="152dp"
+                            android:layout_height="match_parent"
+                            android:text="Previous"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/roboto"
+                            app:cornerRadius="40dp"
+                            android:backgroundTint="#009B85"
+                            android:layout_marginRight="10dp"/>
+
+                        <Button
+                            android:id="@+id/btn_Next"
+                            android:layout_width="152dp"
+                            android:layout_height="match_parent"
+                            android:text="Next"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/roboto"
+                            app:cornerRadius="40dp"
+                            android:backgroundTint="#009B85"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/SavedButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/details2"
+                android:orientation="vertical"
+                android:layout_margin="30dp">
+
+                <Button
+                    android:id="@+id/btn_view_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#009B85"
+                    android:fontFamily="@font/roboto"
+                    android:text="Saved Posts"
+                    android:textSize="18dp"
+                    app:cornerRadius="40dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/SavedButton"
+                android:layout_margin="30dp">
+
+                <Button
+                    android:id="@+id/btn_Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Back"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/roboto"
+                    app:cornerRadius="40dp"
+                    android:backgroundTint="#009B85"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

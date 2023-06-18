@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">EveryMoveApp</string>
+
+    <string name="view_button">View Plan</string>
+
+    <string name="DietplanA"> <b>Vegetarian</b>
+
+    A number of curated Vegetarian plans to keep fit while sticking to your diet
+    </string>
+    <string name="excercise_plans"><b>Exercise Plans</b> </string>
+    <string name="btn_viewplan">View Plan</string>
+    <string name="ex_plan1"> <b> Plan A </b>
+
+    A balanced approach for beginners to increase overall fitness with a focus on building up cardio and light bodybuildng.
+
+    </string>
+
+    <string name="ex_plan2"> <b>Plan B Aerobics High Intensive</b>
+
+
+  Contains a variety of intensive workouts for those who wish to stretch their cardio to the limits over a short period of time
+
+
+    </string>
+
+    <string name="ex_plan3"><b>Plan C Strength Training </b>
+
+   A set of workouts and exercises designed to improve and boost muscle and skeleton strength from head to toe
+
+    </string>
+
+    <string name="ex_plan4"><b>Plan D Abdomen and Obliques</b>
+
+        A comprehensive suite of workouts that can be employed to strengthen core muscles
+
+    </string>
+
+    <string name="workout_plan1">
+
+          <b>Monday</b> : Upper-body strength training (45 to 60 minutes)
+<b>Tuesday</b>: Lower-body strength training (30 to 60 minutes)
+<b>Wednesday</b>: Yoga or a low-impact activity such as barre, light cycling, or swimming (30 to 60 minutes)
+<b>Thursday</b>: HIIT  High Intensity Training (20 minutes)
+<b>Friday</b>: Total-body strength training (30 to 60 minutes)
+<b>Saturday</b>: Steady-state cardio (running or cycling for as long as feels comfortable for you)
+<b>Sunday</b>: Rest
+
+      </string>
+    <string name="title"> <b>Exercise Plans </b></string>
+
+</resources>

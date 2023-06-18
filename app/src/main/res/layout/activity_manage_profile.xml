@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Manage_Profile_Activity"
+    android:background="@drawable/intro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            >
+
+            <ImageView
+                android:id="@+id/image_view_profile_Dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/no_profile_pic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_show_Welcome"
+                android:layout_below="@id/image_view_profile_Dp"
+                android:hint="Loading....."
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/lobster"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/color_white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_boarder">
+            <EditText
+                android:id="@+id/text_view_Full_Name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_boarder"
+                android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/source"
+                android:hint="Loading......"
+                android:padding="8dp"
+                android:textColor="@color/color_white" />
+            <EditText
+                android:id="@+id/text_view_Email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/text_view_Full_Name"
+                android:background="@drawable/button_boarder"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/source"
+                android:hint="Loading......"
+                android:padding="8dp"
+                android:textColor="@color/color_white" />
+            <EditText
+                android:id="@+id/text_view_Dob"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/text_view_Email"
+                android:background="@drawable/button_boarder"
+                android:drawableLeft="@drawable/baseline_access_time_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/source"
+                android:hint="Loading......"
+                android:padding="8dp"
+                android:textColor="@color/color_white" />
+
+            <EditText
+                android:id="@+id/text_view_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/text_view_Dob"
+                android:background="@drawable/button_boarder"
+                android:drawableLeft="@drawable/baseline_social_distance_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/source"
+                android:hint="Loading......"
+                android:padding="8dp"
+                android:textColor="@color/color_white" />
+
+            <EditText
+                android:id="@+id/text_view_Height"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/text_view_Gender"
+                android:background="@drawable/button_boarder"
+                android:drawableLeft="@drawable/baseline_height_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/source"
+                android:hint="Loading......"
+                android:padding="8dp"
+                android:textColor="@color/color_white" />
+            <EditText
+                android:id="@+id/text_view_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/text_view_Height"
+                android:background="@drawable/button_boarder"
+                android:drawableLeft="@drawable/baseline_monitor_weight_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/source"
+                android:hint="Loading......"
+                android:padding="8dp"
+                android:textColor="@color/color_white" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

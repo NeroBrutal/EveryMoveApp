@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background2"
+tools:context=".MainActivity">
+
+<Spinner
+    android:id="@+id/age_spinner"
+    android:layout_width="291dp"
+    android:layout_height="59dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.15"
+    tools:ignore="SpeakableTextPresentCheck" />
+
+<TextView
+    android:id="@+id/meal_plan_text_view"
+    android:layout_width="351dp"
+    android:layout_height="185dp"
+    android:background="#505058"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.32" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="299dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Browse Plans"
+        android:textColor="#009B85"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Button
+    android:id="@+id/breakfast_button"
+    android:layout_width="125dp"
+    android:layout_height="48dp"
+    android:background="@drawable/shape_button"
+    android:backgroundTint="@color/teal_700"
+    android:text="Breakfast"
+    android:textColor="@color/white"
+    android:layout_marginLeft="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.865" />
+
+<Button
+    android:id="@+id/lunch_button"
+    android:layout_width="110dp"
+    android:layout_height="48dp"
+    android:background="@drawable/shape_button"
+    android:backgroundTint="@color/teal_700"
+    android:text="Lunch"
+    android:textColor="@color/white"
+    android:textStyle="normal"
+    android:layout_marginLeft="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.865" />
+
+<Button
+    android:id="@+id/dinner_button"
+    android:layout_width="110dp"
+    android:layout_height="48dp"
+    android:background="@drawable/shape_button"
+    android:backgroundTint="@color/teal_700"
+    android:text="Dinner"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.946"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.865" />
+
+<Button
+    android:id="@+id/newDpBtn"
+    android:layout_width="205dp"
+    android:layout_height="48dp"
+    android:background="@drawable/shape_button"
+    android:backgroundTint="@color/teal_700"
+    android:text="Add new diet plans"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.965" />
+
+<Button
+    android:id="@+id/btnViewDiets"
+    android:layout_width="168dp"
+    android:layout_height="48dp"
+    android:background="@drawable/shape_button"
+    android:backgroundTint="@color/teal_700"
+    android:text="View all plans"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toTopOf="@+id/lunch_button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/meal_plan_text_view"
+    app:layout_constraintVertical_bias="0.883" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/pescadiet" />
+
+    <!--<EditText
+        android:id="@+id/txtName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Enter Plan Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
